@@ -2,11 +2,8 @@ NCSC
 ====
 
 Namecoin Stock Control v0.1beta
-
-issuing and handling of multiple Namecoin names
-
+Issuing and handling of multiple Namecoin names
 phelix / 2012 / https://github.com/phelixbtc/ncsc
-
 GPL License - http://www.gnu.org/licenses/gpl.html - no guarantees
 
 PLEASE NOTE
