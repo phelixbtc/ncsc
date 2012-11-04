@@ -138,6 +138,7 @@ if __name__ == "__main__":
                               jsonStringIssuer=params.jsonStringIssuer)
         print
         print "About to register " + str(params.PIECES) + " + 2 namecoin names. Approximate maximum cost %.3fNMC" % cost
+        print "This can easily take a couple of hours (at least two)!"
         print "Proceed? <enter> / <ctrl-c>"
         raw_input()
         ncscIssue.run_save()
