@@ -29,12 +29,12 @@ class NCS(object):
         self.nameDictDict = None
 
     def display_info(self):
+        self.display_stock_info()
+        print        
         self.display_wallet_info()
         print
         self.get_own_names()
         self.count_names()
-        print
-        self.display_stock_info()
         print
 
     def display_stock_info(self):
@@ -102,6 +102,7 @@ class NCS(object):
     def pay_single_dividend(self, nmcAmount, number):
         name = self.get_name(number)
         r = pnc.sendtoname(name, nmcAmount)
+        print "pay_dividends:", name, "done:", r        
         return r
         
     def pay_dividends(self, nmcAmount):
@@ -110,8 +111,7 @@ class NCS(object):
             print "pay_dividends: not enough coins"
             return
         for i in range(params.PIECES):
-            self.pay_single_dividend(nmcAmount, i)
-            print "pay_dividends:", name, "done:", r
+            self.pay_single_dividend(nmcAmount, i)            
         print "pay_dividends: all done"
                            
     def update_names(self):
@@ -145,7 +145,7 @@ if __name__ == "__main__":
     display_info = ncs.display_info
     pay_dividends = ncs.pay_dividends
     transfer_names_to_address = ncs.transfer_names_to_address
-    update_names = ncs.udpate_names
+    update_names = ncs.update_names
 
     print_help()
     

@@ -9,6 +9,11 @@ phelix / 2012 / https://github.com/phelixbtc/ncsc
 
 GPL License - http://www.gnu.org/licenses/gpl.html - no guarantees
 
+contact: phelix on http://bitcointalk.org forum
+
+http://namecoin.info/
+
+
 PLEASE NOTE
 -----------
 
@@ -39,3 +44,8 @@ KNOWN ISSUES
 ------------
 
 Stock holders will have to update their names every 36000 blocks (~~eight months) or they will expire. It is possible to tell the address that held the name when it expired.
+
+LICENSE
+-------
+GPL unless stated otherwise - http://www.gnu.org/licenses/gpl.html
+
